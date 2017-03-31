@@ -1,0 +1,31 @@
+%YAML:1.0
+# This file describes how tags are placed on objects.
+#
+# This can also be used to provide tag aliases, or transform the computed
+# origin of a tag.
+#
+# This sample file define 3 objects, and covers the different options
+# available.
+
+# This first object has only one tag (ID 0). 'myobject1' is the name returned
+# by the object detector. The size of the tag is 20x20 (the unit does not
+# matter, but must be consistent with the calibration unit. We recommend to use
+# millimeters).
+# This simple declaration allows to define name aliases for tags. 'tag'
+# and 'size' are the only two mandatory fields.
+Tag1(TopLeft):
+    - tag: 13
+      size: 10.9
+
+Tag2(TopRight):
+    - tag: 978
+      size: 3.8
+      # translation: [80, 0, 0]
+
+Tag3(BottomRight):
+    - tag: 972
+      size: 3.8
+
+Tag4(BottomLeft):
+    - tag: 970
+      size: 3.8
